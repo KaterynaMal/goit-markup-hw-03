@@ -39,11 +39,20 @@ body {
   padding-right: 15px;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /*Шапка сайту*/
 
 /*.header {
   display: inline-block;
 }*/
+
+.header {
+  background-color: teal;
+}
 
 .logo {
   color: var(--title-text-color);
@@ -87,6 +96,15 @@ body {
 
 /*Основний контент*/
 
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .baner-title {
   color: var(--primary-white-color);
   cursor: pointer;
@@ -96,6 +114,9 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  padding-top: 200px;
+  margin-bottom: 30px;
 }
 
 .baner {
@@ -111,6 +132,10 @@ body {
   font-family: inherit;
   text-align: center;
   font-size: 16px;
+
+  display: inline-block;
+  border-radius: 4px;
+  text-align: center;
 }
 
 .btn.primary {
@@ -122,6 +147,13 @@ body {
   display: flex;
   align-items: center;
   letter-spacing: 0.06em;
+  border: 2px solid var(--accent-color);
+
+  margin-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 200px;
+  padding: 10px 32px;
 }
 
 .btn.primary:focus,
@@ -135,6 +167,10 @@ body {
   font-weight: 500;
   letter-spacing: 0.03em;
   line-height: 1.62;
+
+  min-width: 73px;
+  padding: 6px, 22px;
+  border-color: var(--secondary-background-color);
 }
 
 .btn:focus,
@@ -154,12 +190,18 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .advant-title {
   color: var(--title-text-color);
   font-size: 14px;
+  margin-bottom: 10px;
 }
+
+/*.advant {
+  margin-bottom: 94px;
+}*/
 
 .advant-title,
 .list-title {
@@ -179,6 +221,7 @@ body {
 
 .list {
   list-style: none;
+  margin-bottom: 10px;
 }
 
 .team-title,
@@ -189,9 +232,14 @@ body {
   letter-spacing: 0.03em;
 }
 
+.img {
+  margin-bottom: 30px;
+}
+
 .team-title {
   color: var(--title-text-color);
   font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .link {
@@ -206,10 +254,22 @@ body {
   font-weight: 400;
 }*/
 
+.works {
+  background-color: tomato;
+}
+
 .work-list .variaty {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+}
+
+.list-title,
+.variaty {
+  margin-bottom: 4px;
+}
+.work-list .img {
+  margin-bottom: 20px;
 }
 
 /*footer*/
@@ -217,6 +277,11 @@ body {
 .footer {
   background-color: var(--dark-background-color);
 }
+
+/*.footer .logo {
+  padding-top: 60px;
+  margin-bottom: 20px;
+}*/
 
 .address,
 .footer .logo {
@@ -231,6 +296,7 @@ body {
 .contacts {
   font-style: normal;
   text-decoration: none;
+  margin-bottom: 9px;
 }
 
 .address:focus,
