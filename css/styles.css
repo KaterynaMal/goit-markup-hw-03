@@ -36,11 +36,11 @@ body {
 
 /*   Шапка сайту   */
 
-.header {
+header {
   border-bottom: solid 1px #ececec;
 }
 
-.header-container {
+header .container {
   display: flex;
   align-items: center;
 }
@@ -153,13 +153,14 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  padding-top: 200px;
   margin-bottom: 30px;
 }
 
 .baner {
   background-color: var(--dark-background-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 /*   Кнопки   */
@@ -172,6 +173,7 @@ ul {
   text-align: center;
   font-size: 16px;
 
+  border: transparent;
   border-radius: 4px;
   text-align: center;
 }
@@ -191,10 +193,6 @@ ul {
   margin-right: auto;
   min-width: 200px;
   padding: 10px 32px;
-}
-
-.button-primary {
-  padding-bottom: 200px;
 }
 
 .btn.primary:focus,
@@ -219,14 +217,8 @@ ul {
   margin-bottom: 34px;
 }
 
-.btn-item {
-  height: 38px;
-}
-
 .btn-list {
   justify-content: center;
-  padding-top: 100px;
-  margin-bottom: 50px;
 }
 
 .btn-item:not(:last-child) {
@@ -266,6 +258,10 @@ img {
 }
 
 /*   Чем мы занимаемся   */
+
+.section.directions {
+  padding-top: 0;
+}
 
 .directions:not(:last-child) {
   margin-right: 30px;
@@ -310,7 +306,7 @@ img {
 }
 
 .section.advant {
-  padding-bottom: 0;
+  padding-bottom: 94px;
 }
 
 /*   Наша команда   */
@@ -388,10 +384,6 @@ img {
   color: var(--primary-text-color);
 }
 
-.section.works {
-  padding-top: 0;
-}
-
 .work-list .variaty {
   font-size: 16px;
   line-height: 1.88;
@@ -430,27 +422,35 @@ img {
   border-top: none;
 }
 
+.works-list-title,
+.variaty {
+  margin-bottom: 4px;
+}
+
 /*   footer   */
 
-.footer {
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--dark-background-color);
 }
 
-.footer .logo {
+/*.footer {
+  background-color: var(--dark-background-color);
+}*/
+
+footer .logo {
   display: block;
-  padding-top: 60px;
   margin-bottom: 20px;
   margin-right: 0;
 }
 
 .footer-list {
   list-style: none;
-
-  padding-bottom: 60px;
 }
 
 .address,
-.footer .logo {
+footer .logo {
   color: var(--primary-white-color);
 }
 
@@ -464,8 +464,8 @@ img {
   text-decoration: none;
 }
 
-.address,
-.mail {
+.address-item,
+.mail-item {
   margin-bottom: 9px;
 }
 
